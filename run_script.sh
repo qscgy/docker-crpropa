@@ -6,4 +6,4 @@ containerprog="cosmicrays/$1"
 echo $prog
 
 # && chmod 777 cosmicrays/plot.png && chmod 777 cosmicrays/galactic_trajectories.txt
-docker run -it -v "$workdir:/cosmicrays" convolve/crpropa
+docker run -it -v "$workdir:/cosmicrays" convolve/crpropa "$1"
