@@ -108,7 +108,7 @@ ax.yaxis.set_ticks((-20,-10,0,10,20))
 ax.zaxis.set_ticks((-20,-10,0,10,20))
 
 if runningInDocker():
-    shutil.copy2('galactic_trajectories.txt', '/cosmicrays')
+    print("Running in Docker")
     plt.savefig('/cosmicrays/plot.png', format='png')
     if os.path.isfile('/cosmicrays/plot.png'):
         print('Plot created')
