@@ -2,6 +2,7 @@ from crpropa import *
 import sys, os
 from mpl_toolkits.mplot3d import axes3d
 import numpy as np
+import shutil
 
 
 def runningInDocker():
@@ -43,7 +44,7 @@ class MyTrajectoryOutput(Module):
         self.fout.close()
 
 
-output = MyTrajectoryOutput('galactic_trajectiories.txt')
+output = MyTrajectoryOutput('galactic_trajectories.txt')
 sim.add(output)
 
 # source = Source()
@@ -77,7 +78,7 @@ import matplotlib.pyplot as plt
 plt.figure(figsize=(12, 12))
 ax = plt.subplot(111, projection='3d', aspect='equal')
 
-I, X, Y, Z = np.genfromtxt('galactic_trajectiories.txt', unpack=True, skip_footer=1)
+I, X, Y, Z = np.genfromtxt('galactic_trajectories.txt', unpack=True, skip_footer=1)
 for i in range(int(max(I)+1)):
     # print(X)
     idx = I == i
@@ -107,6 +108,7 @@ ax.yaxis.set_ticks((-20,-10,0,10,20))
 ax.zaxis.set_ticks((-20,-10,0,10,20))
 
 if runningInDocker():
+    shutil.copy2('galactic_trajectories.txt', '/cosmicrays')
     plt.savefig('/cosmicrays/plot.png', format='png')
     if os.path.isfile('/cosmicrays/plot.png'):
         print('Plot created')
