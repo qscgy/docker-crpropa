@@ -17,8 +17,8 @@ def runningInDocker():
 
 B = JF12Field()
 randomSeed = 691432
-B.randomStriated(randomSeed)
-B.randomTurbulent(randomSeed)
+# B.randomStriated(randomSeed)
+# B.randomTurbulent(randomSeed)
 
 sim = ModuleList()
 sim.add(PropagationCK(B, 1e-4, 0.1*parsec, 100*parsec))
