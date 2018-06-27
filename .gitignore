@@ -1,1 +1,11 @@
 out/*
+process_crt.py
+gal_traj.py
+galactic_backtracing.py
+process_crt.py
+test.py
+basics.ipynb
+trajectories.txt
+events.txt
+.ipynb_checkpoints/*
+.ipynb_checkpoints
