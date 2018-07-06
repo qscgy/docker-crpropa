@@ -113,7 +113,7 @@ def perturb_angle(xx,yy):
 	return dtheta
 
 for evt in filelist:
-	print "Loading %i of %i" %(filelist.index(evt),len(filelist))
+	print("Loading %i of %i" %(filelist.index(evt),len(filelist)))
 	evt_split = evt.split('evt')[1]
 	evtnum=int(''.join([k for k in evt_split if k.isdigit()]))
 	rawdata=np.load(evt)
@@ -171,7 +171,7 @@ for evt in filelist:
 	tmp = np.isnan(lat)
 	if len(lat[tmp]) > 0:
 		num_nans = len(lat[tmp])
-		print "found %i nans in lat array. Exlcuding." %num_nans
+		print("found %i nans in lat array. Exlcuding." %num_nans)
 		lon = lon[~tmp]
 		lat = lat[~tmp]
 		xyz = xyz[~tmp]
@@ -320,7 +320,7 @@ for evt in filelist:
 	max_lon = max([obs_lon+2,xmax])
 	min_lat = min([obs_lat-2,ymin])
 	min_lon = min([obs_lon-2,xmin])
-	print "Max: (%.2f,%.2f) Min: (%.2f,%.2f)" %(max_lon,max_lat,min_lon,min_lat)
+	print("Max: (%.2f,%.2f) Min: (%.2f,%.2f)" %(max_lon,max_lat,min_lon,min_lat))
 	cset=plt.contour(xx,yy,znew,[l2,l3],colors='k',fignum=1)
 	sig_areas = [0] * 2
 	for i in range(2):# 2 contours
@@ -377,4 +377,4 @@ for evt in filelist:
 			sampmean[1])
 		s += "%.2f "*2 %tuple(sig_areas)
 		F.write(s+"\n")
-	print "Event analysis complete"
+	print("Event analysis complete")
