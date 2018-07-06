@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+# encoding: utf-8
 
 import numpy as np
 import scipy.stats as ss
@@ -50,5 +51,4 @@ sim.add(crp.SphericalBoundary(crp.Vector3d(0),20*crp.kpc))
 sim.run(cr)
 pos=cr.current.getPosition()
 mom=cr.current.getMomentum()
-print(cr.current.getEnergy(),pos.x,pos.y,
-            pos.z,mom.x,mom.y,mom.z,cr.getRedshift())
+print(cr.current.getEnergy(), pos.x, pos.y, pos.z, mom.x, mom.y, mom.z, cr.getRedshift())
