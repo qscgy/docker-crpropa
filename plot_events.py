@@ -12,28 +12,30 @@ data_t = df.values.transpose()
 
 nmost = 2000
 largest = np.argpartition(data_t[4], -nmost)[-nmost:]
-
-# print(largest)
+print(largest)
 # plt.figure()
 energies = data_t[4, largest]
 # h = np.histogram(energies, bins=20)
-largest = np.ma.array(largest, mask=False)
+mask = np.ma.array(largest, mask=False)
+print(mask)
 for i in range(largest.shape[0]):
     # filter out abnormally large values or values where missing values had to be filled in with 0
-    if energies[i] > 200 or abs(data_t[38, largest[i]]) < 0.000001:
-        largest[i] = True
+    if energies[i] > 500 or abs(data_t[38, largest[i]]) < 0.000001:
+        mask[i] = np.ma.masked
+largest = mask.compressed()
+print(largest)
 energies = data_t[4, largest]
+print(energies)
+print(np.count_nonzero(energies == 0.192373))
 l = data_t[5, largest]
 b = data_t[6, largest]
-for i in largest:
-    if abs(data_t[5, i]) < 1:
-        print(data[i])
 # plt.hist(energies, bins=200)
 # plt.show()
 
 
 fig = plt.figure(figsize=(12, 9), edgecolor='w')
-m = Basemap(projection='hammer', lon_0=-80)
+plt.subplot('211')
+m = Basemap(projection='eck4', lon_0=-80)
 # m.drawcoastlines()
 
 # lat, lon = 29.7630556,-95.3630556
@@ -41,4 +43,7 @@ m = Basemap(projection='hammer', lon_0=-80)
 x, y = m(l, b)
 m.scatter(x, y, c=energies, cmap='plasma')
 m.colorbar()
+
+plt.subplot('212')
+plt.hist(energies, bins=40)
 plt.show()
