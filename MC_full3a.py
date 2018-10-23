@@ -31,11 +31,12 @@ else:
     call_crp = "./"+call_crp
 
 evt_id = np.loadtxt(infile, usecols=(3,), dtype=np.float64)
-glat, glon, E = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
+E, glat, glon = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
 n_its = int(sys.argv[1])    # number of iterations
 
 for i in range(evt_id.shape[0]):  # TODO change back to 10
     ID = evt_id[i]
+    # ID = evt_id
     outfile = 'samples/evt_%i_a.txt' % ID
     np_outfile = 'samples/evt_%i_a.npy' % ID
     if docker:
@@ -69,8 +70,9 @@ for i in range(evt_id.shape[0]):  # TODO change back to 10
                 data_array[j, k] = out[k]
         except:
             data_array[j, 8] = 1.
+            # Remember to chmod +x call_crp.py
             print("Timeout")
         # print(out)
         # print(type(data_array[j, 0]))
-    np.save(np_outfile, data_array)
+    # np.save(np_outfile, data_array)
     np.savetxt(outfile, data_array)

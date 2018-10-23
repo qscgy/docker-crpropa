@@ -104,6 +104,7 @@ def process_sim_output(fname):
         bs[i] = vec.getTheta()*180.0/np.pi
     return energies, ls, bs
 
+
 def generate_fake_data(n):
     i = 0
     energies = np.zeros(n)
