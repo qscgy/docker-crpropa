@@ -30,7 +30,7 @@ else:
     call_crp = "./"+call_crp
 
 evt_id = np.loadtxt(infile, usecols=(3,), dtype=np.float64)
-E, glon, glat = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
+glat, glon, E = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
 
 for i in range(1):  # TODO change back to 10
     ID = evt_id[i]

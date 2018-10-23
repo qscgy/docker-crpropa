@@ -1,5 +1,6 @@
 out/*
 process_crt.py
+samples/*
 gal_traj.py
 galactic_backtracing.py
 process_crt.py

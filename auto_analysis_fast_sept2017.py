@@ -59,15 +59,15 @@ colorlist = ['#3B4CC0',
 new_cmap = matplotlib.colors.ListedColormap(colorlist, name='custom_cmap')
 plt.register_cmap(cmap=new_cmap)
 
-datadir = 'events50_new_icrc.txt'
-darray = np.genfromtxt(datadir, dtype=None, names=('id', 'E', 'lon', 'lat'))
+datadir = '6T5_data_to_simulate.txt'
+darray = np.genfromtxt(datadir, dtype=None, names=('lat', 'lon', 'E', 'id'))
 
 filelist = []
-datadir = 'events_to_be_used/'
+datadir = 'samples/'
 dirlist = os.listdir(datadir)
 
 for s in dirlist:
-    if ('evt' in s) and ('.npy' in s):
+    if ('evt' in s) and ('.txt' in s):
         filelist.append(datadir + s)
 
 
