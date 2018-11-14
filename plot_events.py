@@ -119,8 +119,8 @@ def generate_fake_data(n):
 
 
 # energies, l, b = process_raw_auger('/home/sam/Downloads/auger-data/Archive', '\s+', 7)
-# energies, l, b = process_sim_output('samples/evt_0_a.txt')
-energies, l, b = generate_fake_data(10)
+energies, l, b = process_sim_output('samples/evt_0_a.txt')
+# energies, l, b = generate_fake_data(10)
 for data in zip(energies, l, b):
     print(data[0],data[1], data[2])
 

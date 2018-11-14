@@ -3,6 +3,7 @@ import scipy.stats as ss
 import random
 import subprocess as sp
 import sys
+import healpy as hp
 
 
 #   |   ||
@@ -31,7 +32,8 @@ else:
     call_crp = "./"+call_crp
 
 evt_id = np.loadtxt(infile, usecols=(3,), dtype=np.float64)
-E, glat, glon = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
+E, glon, glat = np.loadtxt(infile, usecols=(0, 1, 2), unpack=True)  # TODO cols should be 5, 1, 2
+# print(E, glon, glat)
 n_its = int(sys.argv[1])    # number of iterations
 
 for i in range(evt_id.shape[0]):  # TODO change back to 10
@@ -53,6 +55,7 @@ for i in range(evt_id.shape[0]):  # TODO change back to 10
         # print('{0} {1} {2}'.format(s1, s2, s3))
         cmd = ['timeout', '35', call_crp, '%f' % E[i],
                '%f' % glon[i], '%f' % glat[i], '%i' % s1, '%i' % s2, '%i' % s3]
+        # print(cmd)
         proc = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.PIPE, close_fds=True)
         out, err = proc.communicate()
         out = out.decode('ascii')
