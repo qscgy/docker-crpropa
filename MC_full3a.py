@@ -1,15 +1,16 @@
 import numpy as np
-import scipy.stats as ss
 import random
 import subprocess as sp
 import sys
-import healpy as hp
 
 
 #   |   ||
 #
 #   ||  |_
 
+######################################
+# IMPORTANT: Energy output will be in JOULES, not EeV!!!!!!!!!!!
+######################################
 
 def running_in_docker():
     with open('/proc/self/cgroup', 'r') as procfile:
@@ -59,6 +60,7 @@ for i in range(evt_id.shape[0]):  # TODO change back to 10
         proc = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.PIPE, close_fds=True)
         out, err = proc.communicate()
         out = out.decode('ascii')
+        print(err)
 
         # out = out.decode('utf-8')
         # out = sp.check_output(cmd)
@@ -75,7 +77,7 @@ for i in range(evt_id.shape[0]):  # TODO change back to 10
             data_array[j, 8] = 1.
             # Remember to chmod +x call_crp.py
             print("Timeout")
-        # print(out)
+        print(out)
         # print(type(data_array[j, 0]))
     # np.save(np_outfile, data_array)
     np.savetxt(outfile, data_array)
