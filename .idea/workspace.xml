@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d9fe355-67e7-498d-8f22-dd95288694bc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/call_crp_base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6T5_data_to_simulate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/6T5_data_to_simulate.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MC_full3a.py" beforeDir="false" afterPath="$PROJECT_DIR$/MC_full3a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,47 +30,48 @@
     <session id="604222719">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="crp" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="90" />
           <entry key="py" value="28" />
           <entry key="sh" value="4" />
-          <entry key="txt" value="34" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="4" />
           <entry key="Image" value="90" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="38" />
           <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="707" />
+          <entry key="md" value="956" />
           <entry key="py" value="1304" />
           <entry key="sh" value="249" />
-          <entry key="txt" value="10" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="249" />
-          <entry key="Markdown" value="707" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Markdown" value="956" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="Python" value="1304" />
         </counts>
       </usages-collector>
@@ -91,41 +91,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6T5_data_to_simulate.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/call_crp_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="72">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MC_full3a.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="576">
+                <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gal_traj.py">
+        <entry file="file://$PROJECT_DIR$/MC_full3a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3096">
-              <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+            <state relative-caret-position="792">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <marker date="1541982459787" expanded="true" signature="420:1052" ph="..." />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,16 +171,16 @@
         <option value="$PROJECT_DIR$/conv_to_npy.py" />
         <option value="$PROJECT_DIR$/local_batch_runner.py" />
         <option value="$PROJECT_DIR$/simulate.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/plot_events.py" />
         <option value="$PROJECT_DIR$/samples/evt_0_a.txt" />
         <option value="$PROJECT_DIR$/call_crp.py" />
         <option value="$PROJECT_DIR$/wtfsean.py" />
         <option value="$PROJECT_DIR$/gal_traj.py" />
         <option value="$PROJECT_DIR$/call_crp_base.py" />
-        <option value="$PROJECT_DIR$/6T5_data_to_simulate.txt" />
         <option value="$PROJECT_DIR$/run_script.sh" />
         <option value="$PROJECT_DIR$/MC_full3a.py" />
+        <option value="$PROJECT_DIR$/6T5_data_to_simulate.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -253,11 +243,6 @@
             <path>
               <item name="cosmicrays" type="b2602c69:ProjectViewProjectNode" />
               <item name="cosmicrays" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cosmicrays" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cosmicrays" type="462c0819:PsiDirectoryNode" />
-              <item name="samples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,7 +438,7 @@
     <frame x="0" y="35" width="3840" height="2059" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18295941" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18723291" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -464,7 +449,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.3293583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4984375" visible="true" weight="0.33446905" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4984375" visible="true" weight="0.3367405" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299262" />
       <window_info anchor="bottom" id="Python Console" order="11" />
@@ -562,16 +547,6 @@
     <entry file="file://$PROJECT_DIR$/remote_run_sim.sh" />
     <entry file="file://$PROJECT_DIR$/local_run_sim.sh" />
     <entry file="file://$PROJECT_DIR$/local_batch_runner.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process_crt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -627,9 +602,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out2/plot12.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6T5_data_to_simulate_old.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/out2/plot7.png">
       <provider selected="true" editor-type-id="images" />
@@ -702,10 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3096">
           <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1541982459787" expanded="true" signature="420:1052" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,6 +684,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/6T5_data_to_simulate_old.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="57" lean-forward="true" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run_script.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -723,20 +698,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6T5_data_to_simulate.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MC_full3a.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="792">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6T5_data_to_simulate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="576">
+            <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
