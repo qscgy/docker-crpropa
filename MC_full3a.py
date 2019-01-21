@@ -49,7 +49,7 @@ for i in range(evt_id.shape[0]):  # TODO change back to 10
     data_array = np.zeros((n_its, 9))     # TODO change back to (20000, 9)
 
     for j in range(data_array.shape[0]):
-        print("Iteration %i / %i" % (j, data_array.shape[0]))
+        print("Iteration %i / %i of event %i" % (j+1, data_array.shape[0], i))
         if j % 50 == 0:
             np.savetxt(outfile % ID, data_array)  # Save to disk every 50 iterations
         s1, s2, s3 = random.sample(range(1, 2 ** 26 - 1), 3)
